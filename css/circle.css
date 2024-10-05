@@ -1,0 +1,37 @@
+/* styles.css */
+body {
+  background-color: #f0f0f0; /* Background color of the page */
+}
+
+.animation-container {
+  position: relative;
+  overflow: hidden; /* Prevent overflow of circles */
+  height: 50px; /* Height of the container */
+  display: flex; /* Use flexbox to align circles in a row */
+  justify-content: space-between; /* Distribute circles evenly */
+  align-items: center; /* Center vertically */
+}
+
+.circle {
+  width: 25px; /* Circle width */
+  height: 25px; /* Circle height */
+  border-radius: 50%; /* Make it circular */
+  background: linear-gradient(
+    135deg,
+    #4caf50,
+    #81c784
+  ); /* Gradient green color */
+  animation: moveAndFade 5s linear forwards; /* Animation */
+}
+
+@keyframes moveAndFade {
+  0% {
+    transform: translateY(-50%); /* Center vertically */
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: translateY(-50%); /* Keep circles vertically centered */
+    left: 100vw; /* Move to the right off-screen */
+    opacity: 0; /* Fade out */
+  }
+}

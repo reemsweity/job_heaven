@@ -1,0 +1,43 @@
+/* Keyframes for sliding from the bottom */
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(50px); /* Start from 50px below */
+        opacity: 0; /* Start hidden */
+    }
+    50% {
+        transform: translateY(-10px); /* Move slightly above final position */
+        opacity: 0.5; /* Half transparent */
+    }
+    100% {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Keyframes for spinning */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for the row of cards */
+.animated-row {
+    animation: slideInFromBottom 0.8s ease forwards; /* Slide in from bottom */
+}
+
+/* Animation for each card */
+.animated-card {
+    animation: spin 1s ease forwards; /* Spin while coming in */
+    animation-delay: 0.2s; /* Delay to start spinning after sliding */
+}
+
+/* Delay for the second card */
+.animated-card:nth-child(2) {
+    animation-delay: 0.4s; /* Additional delay for the second card */
+}
+
+

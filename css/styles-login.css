@@ -1,0 +1,41 @@
+body {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-container {
+  color: black; /* Change text color to black since the background is now transparent */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect for a better visual appearance */
+}
+
+.animation-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.person-animation {
+  position: absolute;
+  bottom: 0; /* Stick the person animation container to the bottom */
+  left: 0;
+  width: 100%;
+  height: 100px; /* Height of the person animation area */
+  overflow: hidden; /* Hide the person when it moves outside the container */
+}
+
+#person {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px; 
+}
+
+.text-success {
+  color: #28a745 !important; /* Success color for the welcome text */
+}
+.animation-container p {
+  font-size: 1.2rem; /* You can set a specific size if needed */
+  font-weight: 300; /* Adjust to your preference */
+  line-height: 1.5; /* Comfortable line height for readability */
+}

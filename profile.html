@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Profile-Job Heaven</title>
+    <link rel="icon" href="img/person.png" type="image/icon type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/circle.css" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/footer.css" />
+    <style>
+      .update-image-button {
+        border: 2px solid #157347; /* Green border */
+        color: #157347; /* Green text */
+      }
+
+      .update-image-button:hover {
+        background-color: #157347; /* Full green background */
+        color: white !important; /* White text on hover */
+        border-color: #157347;
+      }
+
+      /* Download CV Button */
+      .download-cv-button {
+        background-color: #157347; /* Full green background */
+        color: white !important; /* White text */
+      }
+
+      .download-cv-button:hover {
+        background-color: white; /* White background on hover */
+        color: #157347 !important; /* Green text */
+        border: 2px solid #157347; /* Green border on hover */
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0"
+    >
+      <a
+        href="home.html"
+        class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5"
+      >
+        <img src="img/person.png" width="50px" height="50px" />
+
+        <h1 class="m-0 text-primary">Job Heaven</h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="home.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="profile.html" class="nav-link active">Profile</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="index.html" class="nav-item nav-link">Log Out</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5">
+      <div class="card bg-white shadow-sm rounded-3 p-4">
+        <!-- info card start -->
+        <div class="row align-items-center">
+          <div class="col-md-4 text-sm-start">
+            <img
+              src="img/person.png"
+              alt="Profile Picture"
+              id="profilePicture"
+              class="rounded img-fluid"
+              style="
+                width: 200px;
+                height: 200px;
+                border-radius: 30px;
+                margin-left: 20px;
+              "
+            />
+            <input
+              type="file"
+              accept="image/jpeg, image/png"
+              id="input-file"
+              class="d-none"
+            />
+          </div>
+
+          <div class="col-md-8">
+            <div class="row g-3">
+              <div class="text-start" style="margin-top: 50px">
+                <h2 id="username" class="mt-2 text-success">Loading...</h2>
+                <div
+                  class="bg-light rounded-3 p-3 mb-3"
+                  style="background-color: rgba(76, 175, 80, 0.2)"
+                >
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="fa-solid fa-building-columns text-success me-2"
+                    ></i>
+                    <span id="major">Loading...</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i
+                      class="fa-regular fa-envelope-open text-success me-2"
+                    ></i>
+                    <a href="mailto:" class="text-dark" id="email"
+                      >Loading...</a
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-phone text-success me-2"></i>
+                    <a href="tel:" class="text-dark" id="phone">Loading...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-end mt-3">
+              <label
+                for="input-file"
+                class="btn btn-outline-success text-success rounded-pill update-image-button"
+                style="margin-top: 20px"
+              >
+                Update Image
+              </label>
+              <div id="cv-link-container" class="d-inline">
+                <a
+                  id="cv-download"
+                  class="btn btn-success text-white rounded-pill download-cv-button"
+                  href="#"
+                  style="display: none; margin-top: 10px"
+                  target="_blank"
+                >
+                  Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- info card end -->
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center mt-5">
+            <div class="animation-container">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Edit Profile Section -->
+      <div class="card mt-4" id="editSection">
+        <div class="card-body">
+          <h3 class="text-center text-success">Edit Profile Information</h3>
+          <form id="editProfileForm">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="editName" class="form-label">Full Name:</label>
+                <input
+                  type="text"
+                  id="editName"
+                  class="form-control"
+                  placeholder="Enter full name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="editMajor" class="form-label">Major:</label>
+                <input
+                  type="text"
+                  id="editMajor"
+                  class="form-control"
+                  placeholder="Enter Major"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="editEmail" class="form-label">Email:</label>
+              <input
+                type="email"
+                id="editEmail"
+                class="form-control"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="editPhone" class="form-label">Phone Number:</label>
+              <input
+                type="tel"
+                id="editPhone"
+                class="form-control"
+                placeholder="Enter phone number"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="currentPassword" class="form-label"
+                >Current Password:</label
+              >
+              <input
+                type="password"
+                id="currentPassword"
+                class="form-control"
+                placeholder="Enter current password"
+                required
+              />
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="newPassword" class="form-label"
+                  >New Password:</label
+                >
+                <input
+                  type="password"
+                  id="newPassword"
+                  class="form-control"
+                  placeholder="Enter new password"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="confirmPassword" class="form-label"
+                  >Confirm New Password:</label
+                >
+
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  class="form-control"
+                  placeholder="Confirm new password"
+                />
+              </div>
+            </div>
+
+            <button type="submit" id="saveButton" class="btn btn-success">
+              Save Changes
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5 space">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Company</h5>
+            <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+            <a class="btn btn-link text-white-50" href="contact.html"
+              >Contact Us</a
+            >
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Contact</h5>
+            <p class="mb-2">
+              <a href="tel:+962782514992"
+                ><i class="fa fa-phone-alt me-3"></i>+962782514992
+              </a>
+            </p>
+            <p class="mb-2">
+              <a href="mailto:Job.Heaven@gmail.com"
+                ><i class="fa fa-envelope me-3"></i>Job.Heaven@gmail.com</a
+              >
+            </p>
+
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://x.com/?lang=en"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.facebook.com/profile.php?id=61566871944182"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.linkedin.com/in/loiy-alrwaidat"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0"></div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="">Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e18153dca3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/circle.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="./js/profile.js"></script>
+  </body>
+</html>

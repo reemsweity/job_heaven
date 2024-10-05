@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg  navbar-light shadow  p-3" style= "background-color: #d9eee2;">
+    <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+        <h1 class="m-0 text-success">Job Heaven</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="../../home.html" class="nav-item nav-link">Home</a>
+            <a href="../../about.html" class="nav-item nav-link active">About</a>
+            <div class="nav-item dropdown">
+
+            </div>
+            <a href="../../contact.html" class="nav-item nav-link">Contact</a>
+            <a href="../../index.html" class="nav-item nav-link">Log Out</a>
+
+       
+</nav>
+<!-- Navbar End -->
+
+    <!-- Content Area Start -->
+    <div class="container my-5">
+        <h1>Job Management</h1>
+
+        <!-- Add New Job Button -->
+        <div class="text-end mb-3">
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addJobModal">
+                <i class="fas fa-plus"></i> Add New Job
+            </button>
+        </div>
+
+        <!-- Jobs Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-responsive">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Job Title</th>
+                        <th>Company</th>
+                        <th>Location</th>
+                        <th>Salary</th>
+                        <th>Work Time</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="jobTableBody">
+                    <!-- Job rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Content Area End -->
+
+    <!-- Add Job Modal -->
+<div class="modal fade" id="addJobModal" tabindex="-1" aria-labelledby="addJobModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addJobModalLabel">Add New Job</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addJobForm">
+                    <div class="mb-3">
+                        <label for="jobTitle" class="form-label">Job Title</label>
+                        <input type="text" class="form-control" id="jobTitle" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="company" class="form-label">Company</label>
+                        <input type="text" class="form-control" id="company" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="jobDescription" class="form-label">Job Description</label>
+                        <textarea class="form-control" id="jobDescription" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="salary" class="form-label">Salary</label>
+                        <input type="text" class="form-control" id="salary" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="workTime" class="form-label">Work Time</label>
+                        <select class="form-select" id="workTime" required>
+                            <option selected>Choose...</option>
+                            <option value="Full-Time">Full-Time</option>
+                            <option value="Part-Time">Part-Time</option>
+                            <option value="Contract">Contract</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" class="form-control" id="location" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Category</label>
+                        <select class="form-select" id="category" required>
+                            <option selected>Choose a category...</option>
+                            <option value="Software">Software</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Design">Design</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Educating">Educating</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Hospitality">Hospitality</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Job</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Edit Job Modal -->
+    <div class="modal fade" id="editJobModal" tabindex="-1" aria-labelledby="editJobModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editJobModalLabel">Edit Job</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editJobForm">
+                        <input type="hidden" id="editJobId">
+                        <div class="mb-3">
+                            <label for="editJobTitle" class="form-label">Job Title</label>
+                            <input type="text" class="form-control" id="editJobTitle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editCompany" class="form-label">Company</label>
+                            <input type="text" class="form-control" id="editCompany" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editJobDescription" class="form-label">Job Description</label>
+                            <textarea class="form-control" id="editJobDescription" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editSalary" class="form-label">Salary</label>
+                            <input type="text" class="form-control" id="editSalary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editWorkTime" class="form-label">Work Time</label>
+                            <select class="form-select" id="editWorkTime" required>
+                                <option selected>Choose...</option>
+                                <option value="Full-Time">Full-Time</option>
+                                <option value="Part-Time">Part-Time</option>
+                                <option value="Contract">Contract</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editLocation" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="editLocation" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editCategory" class="form-label">Category</label>
+                            <input type="text" class="form-control" id="editCategory" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        const jobTableBody = document.getElementById('jobTableBody');
+
+        // Load jobs from JSON server when the page loads
+        document.addEventListener('DOMContentLoaded', loadJobsFromServer);
+
+        function loadJobsFromServer() {
+            fetch('http://localhost:3000/jobs')
+                .then(response => response.json())
+                .then(jobs => {
+                    jobs.forEach((job, index) => {
+                        addJobToTable(job.id, job);
+                    });
+                })
+                .catch(error => console.error('Error fetching jobs:', error));
+        }
+
+        // Add new job to JSON server and table
+        document.getElementById('addJobForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const job = {
+                jobTitle: document.getElementById('jobTitle').value,
+                company: document.getElementById('company').value,
+                jobDescription: document.getElementById('jobDescription').value,
+                salary: document.getElementById('salary').value,
+                workTime: document.getElementById('workTime').value,
+                location: document.getElementById('location').value,
+                category: document.getElementById('category').value,
+            };
+
+            fetch('http://localhost:3000/jobs', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(job)
+            })
+            .then(response => response.json())
+            .then(newJob => {
+                addJobToTable(newJob.id, newJob);
+                document.getElementById('addJobForm').reset();
+                bootstrap.Modal.getInstance(document.getElementById('addJobModal')).hide();
+            })
+            .catch(error => console.error('Error adding job:', error));
+        });
+
+        // Add job to table
+        function addJobToTable(id, job) {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${id}</td>
+                <td>${job.jobTitle}</td>
+                <td>${job.company}</td>
+                <td>${job.location}</td>
+                <td>${job.salary}</td>
+                <td>${job.workTime}</td>
+                <td>${job.category}</td>
+                <td>
+                    <button class="btn btn-warning btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editJobModal">Edit</button>
+                    <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+                </td>
+            `;
+            jobTableBody.appendChild(row);
+
+            row.querySelector('.edit-btn').addEventListener('click', () => {
+                populateEditModal(id, job);
+            });
+
+            row.querySelector('.delete-btn').addEventListener('click', () => {
+                deleteJob(id, row);
+            });
+        }
+
+        // Populate the edit modal with job data
+        function populateEditModal(id, job) {
+            document.getElementById('editJobId').value = id;
+            document.getElementById('editJobTitle').value = job.jobTitle;
+            document.getElementById('editCompany').value = job.company;
+            document.getElementById('editJobDescription').value = job.jobDescription;
+            document.getElementById('editSalary').value = job.salary;
+            document.getElementById('editWorkTime').value = job.workTime;
+            document.getElementById('editLocation').value = job.location;
+            document.getElementById('editCategory').value = job.category;
+        }
+
+        // Update job on the JSON server and update table
+        document.getElementById('editJobForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const id = document.getElementById('editJobId').value;
+            const updatedJob = {
+                jobTitle: document.getElementById('editJobTitle').value,
+                company: document.getElementById('editCompany').value,
+                jobDescription: document.getElementById('editJobDescription').value,
+                salary: document.getElementById('editSalary').value,
+                workTime: document.getElementById('editWorkTime').value,
+                location: document.getElementById('editLocation').value,
+                category: document.getElementById('editCategory').value,
+            };
+
+            fetch(`http://localhost:3000/jobs/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updatedJob)
+            })
+            .then(response => response.json())
+            .then(updatedJob => {
+                // Update the table row
+                const row = jobTableBody.querySelector(`tr > td:first-child[textContent="${id}"]`).parentNode;
+                row.children[1].textContent = updatedJob.jobTitle;
+                row.children[2].textContent = updatedJob.company;
+                row.children[3].textContent = updatedJob.location;
+                row.children[4].textContent = updatedJob.salary;
+                row.children[5].textContent = updatedJob.workTime;
+                row.children[6].textContent = updatedJob.category;
+
+                bootstrap.Modal.getInstance(document.getElementById('editJobModal')).hide();
+            })
+            .catch(error => console.error('Error updating job:', error));
+        });
+
+        // Delete job from JSON server and table
+        function deleteJob(id, row) {
+            fetch(`http://localhost:3000/jobs/${id}`, {
+                method: 'DELETE'
+            })
+            .then(() => {
+                row.remove();
+                // Reorder rows to update the numbering
+                Array.from(jobTableBody.children).forEach((row, i) => {
+                    row.children[0].textContent = i + 1;
+                });
+            })
+            .catch(error => console.error('Error deleting job:', error));
+        }
+    </script>
+</body>
+</html>

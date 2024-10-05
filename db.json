@@ -1,0 +1,650 @@
+{
+  "users": [
+    {
+      "id": "b53f",
+      "firstName": "rahaf",
+      "lastName": "ibrahim",
+      "email": "rahaf@gmail.com",
+      "password": "r1234567",
+      "major": "software",
+      "phone": "6666666",
+      "cvUrl": "https://drive.google.com/file/d/1YeXBiwM4aQoYdCqeyzoo5T94SYn3zlIT/view"
+    },
+    {
+      "id": "ca1c",
+      "firstName": "rania",
+      "lastName": "ibrahim",
+      "email": "rania@gmail.com",
+      "password": "r1234567",
+      "major": "software",
+      "phone": "456778",
+      "cvUrl": "https://www.youtube.com/watch?v=dYtdv--qd_U"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "company": "TechCorp",
+      "job_title": "Marketing Specialist",
+      "job_description": "Responsible for developing and executing marketing campaigns.",
+      "salary": 60000,
+      "location": "New York, NY",
+      "category": "Marketing",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "2",
+      "company": "Innova Solutions",
+      "job_title": "Customer Service Representative",
+      "job_description": "Assisting customers with inquiries and resolving issues.",
+      "salary": 40000,
+      "location": "Los Angeles, CA",
+      "category": "Customer Service",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "3",
+      "company": "HR Global",
+      "job_title": "Human Resources Manager",
+      "job_description": "Oversee recruitment and employee relations.",
+      "salary": 80000,
+      "location": "Chicago, IL",
+      "category": "Human Resource",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "4",
+      "company": "ProjectX",
+      "job_title": "Project Manager",
+      "job_description": "Lead project planning, execution, and closure.",
+      "salary": 75000,
+      "location": "San Francisco, CA",
+      "category": "Project Management",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "5",
+      "company": "BizDev Co.",
+      "job_title": "Business Development Executive",
+      "job_description": "Identify new business opportunities and partnerships.",
+      "salary": 70000,
+      "location": "Seattle, WA",
+      "category": "Business Development",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "6",
+      "company": "CommPlus",
+      "job_title": "Sales and Communication Officer",
+      "job_description": "Manage customer relationships and drive sales.",
+      "salary": 55000,
+      "location": "Boston, MA",
+      "category": "Sales & Communication",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "7",
+      "company": "LearnNow",
+      "job_title": "Teacher",
+      "job_description": "Provide educational instruction to students.",
+      "salary": 50000,
+      "location": "Miami, FL",
+      "category": "Teaching & Education",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "8",
+      "company": "DesignStudio",
+      "job_title": "Graphic Designer",
+      "job_description": "Create visual concepts and designs.",
+      "salary": 45000,
+      "location": "Denver, CO",
+      "category": "Design & Creative",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "9",
+      "company": "FastTrack Inc.",
+      "job_title": "Customer Support Specialist",
+      "job_description": "Provide top-notch customer support and handle complaints.",
+      "salary": 38000,
+      "location": "Dallas, TX",
+      "category": "Customer Service",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "10",
+      "company": "CreativeHouse",
+      "job_title": "Art Director",
+      "job_description": "Oversee the visual style and imagery in print, product packaging, and advertisements.",
+      "salary": 90000,
+      "location": "Austin, TX",
+      "category": "Design & Creative",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "11",
+      "company": "FutureTech",
+      "job_title": "Marketing Manager",
+      "job_description": "Develop marketing strategies for new and existing products.",
+      "salary": 85000,
+      "location": "Philadelphia, PA",
+      "category": "Marketing",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "12",
+      "company": "Skyline Resources",
+      "job_title": "HR Assistant",
+      "job_description": "Assist with the recruitment process and employee records management.",
+      "salary": 42000,
+      "location": "Phoenix, AZ",
+      "category": "Human Resource",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "13",
+      "company": "QuickServe",
+      "job_title": "Customer Care Executive",
+      "job_description": "Handle customer queries and provide effective solutions.",
+      "salary": 36000,
+      "location": "Charlotte, NC",
+      "category": "Customer Service",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "14",
+      "company": "Star Consulting",
+      "job_title": "Project Coordinator",
+      "job_description": "Coordinate project schedules, resources, and information.",
+      "salary": 62000,
+      "location": "San Diego, CA",
+      "category": "Project Management",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "15",
+      "company": "Bright Future",
+      "job_title": "Business Analyst",
+      "job_description": "Analyze business data and provide insights for decision-making.",
+      "salary": 67000,
+      "location": "Portland, OR",
+      "category": "Business Development",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "16",
+      "company": "SmartHire",
+      "job_title": "Recruitment Specialist",
+      "job_description": "Lead recruitment efforts and employee onboarding.",
+      "salary": 46000,
+      "location": "Las Vegas, NV",
+      "category": "Human Resource",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "17",
+      "company": "EduWorld",
+      "job_title": "Primary School Teacher",
+      "job_description": "Teach young students foundational subjects.",
+      "salary": 48000,
+      "location": "Houston, TX",
+      "category": "Teaching & Education",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "18",
+      "company": "TechSolutions",
+      "job_title": "Sales Representative",
+      "job_description": "Drive sales by reaching out to potential clients.",
+      "salary": 52000,
+      "location": "Detroit, MI",
+      "category": "Sales & Communication",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "19",
+      "company": "Vision Creative",
+      "job_title": "UX Designer",
+      "job_description": "Design intuitive user experiences for websites and apps.",
+      "salary": 63000,
+      "location": "San Jose, CA",
+      "category": "Design & Creative",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "20",
+      "company": "MarketSense",
+      "job_title": "Marketing Coordinator",
+      "job_description": "Coordinate and assist in marketing campaign execution.",
+      "salary": 50000,
+      "location": "Orlando, FL",
+      "category": "Marketing",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "21",
+      "company": "PeopleFirst",
+      "job_title": "HR Business Partner",
+      "job_description": "Advise and support business leadership on HR strategies.",
+      "salary": 78000,
+      "location": "Atlanta, GA",
+      "category": "Human Resource",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "22",
+      "company": "EduTech",
+      "job_title": "Online Course Instructor",
+      "job_description": "Create and deliver online courses.",
+      "salary": 57000,
+      "location": "Raleigh, NC",
+      "category": "Teaching & Education",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "23",
+      "company": "BizGrowth",
+      "job_title": "Business Development Associate",
+      "job_description": "Support new business development efforts.",
+      "salary": 60000,
+      "location": "San Antonio, TX",
+      "category": "Business Development",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "24",
+      "company": "TalentWin",
+      "job_title": "Sales Coordinator",
+      "job_description": "Assist with sales processes and client communications.",
+      "salary": 42000,
+      "location": "Salt Lake City, UT",
+      "category": "Sales & Communication",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "25",
+      "company": "ArtVision",
+      "job_title": "Creative Director",
+      "job_description": "Lead creative team and manage visual design projects.",
+      "salary": 95000,
+      "location": "New Orleans, LA",
+      "category": "Design & Creative",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "26",
+      "company": "SmartMarketing",
+      "job_title": "Digital Marketing Analyst",
+      "job_description": "Analyze and optimize digital marketing campaigns.",
+      "salary": 68000,
+      "location": "Kansas City, MO",
+      "category": "Marketing",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "27",
+      "company": "TopTalent",
+      "job_title": "HR Recruiter",
+      "job_description": "Manage recruitment and candidate selection.",
+      "salary": 44000,
+      "location": "Indianapolis, IN",
+      "category": "Human Resource",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "28",
+      "company": "EliteSales",
+      "job_title": "Sales Manager",
+      "job_description": "Lead the sales team to achieve company sales targets.",
+      "salary": 85000,
+      "location": "Tampa, FL",
+      "category": "Sales & Communication",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "29",
+      "company": "QuickDesign",
+      "job_title": "Product Designer",
+      "job_description": "Design and develop product concepts and prototypes.",
+      "salary": 62000,
+      "location": "Omaha, NE",
+      "category": "Design & Creative",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "30",
+      "company": "BrightAcademy",
+      "job_title": "Middle School Teacher",
+      "job_description": "Teach students in middle school, covering multiple subjects.",
+      "salary": 54000,
+      "location": "Memphis, TN",
+      "category": "Teaching & Education",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "31",
+      "company": "ProjectLeader",
+      "job_title": "Senior Project Manager",
+      "job_description": "Manage high-level projects with large teams.",
+      "salary": 92000,
+      "location": "Jacksonville, FL",
+      "category": "Project Management",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "32",
+      "company": "MarketForce",
+      "job_title": "Social Media Specialist",
+      "job_description": "Develop and manage social media content for marketing.",
+      "salary": 48000,
+      "location": "Fort Worth, TX",
+      "category": "Marketing",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "33",
+      "company": "NextGen Solutions",
+      "job_title": "Customer Experience Specialist",
+      "job_description": "Enhance customer experience through personalized service.",
+      "salary": 37000,
+      "location": "Columbus, OH",
+      "category": "Customer Service",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "34",
+      "company": "EducateNow",
+      "job_title": "High School Teacher",
+      "job_description": "Teach high school students in various subjects.",
+      "salary": 60000,
+      "location": "Milwaukee, WI",
+      "category": "Teaching & Education",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "35",
+      "company": "SharpDesign",
+      "job_title": "Creative Strategist",
+      "job_description": "Develop creative strategies for advertising campaigns.",
+      "salary": 73000,
+      "location": "Nashville, TN",
+      "category": "Design & Creative",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "36",
+      "company": "BrightSkies",
+      "job_title": "Customer Relations Specialist",
+      "job_description": "Build relationships with customers to ensure satisfaction.",
+      "salary": 42000,
+      "location": "Baltimore, MD",
+      "category": "Customer Service",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "37",
+      "company": "EduPro",
+      "job_title": "College Instructor",
+      "job_description": "Teach college-level courses in your field of expertise.",
+      "salary": 71000,
+      "location": "Louisville, KY",
+      "category": "Teaching & Education",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "38",
+      "company": "SalesForce",
+      "job_title": "Sales Trainer",
+      "job_description": "Train and mentor sales team members.",
+      "salary": 66000,
+      "location": "Richmond, VA",
+      "category": "Sales & Communication",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "39",
+      "company": "TechStart",
+      "job_title": "Business Development Manager",
+      "job_description": "Develop growth strategies and build key partnerships.",
+      "salary": 90000,
+      "location": "Charlotte, NC",
+      "category": "Business Development",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "40",
+      "company": "CreateSolutions",
+      "job_title": "Lead Designer",
+      "job_description": "Lead the design team in creating impactful visual solutions.",
+      "salary": 87000,
+      "location": "San Francisco, CA",
+      "category": "Design & Creative",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "41",
+      "company": "MarketGo",
+      "job_title": "SEO Specialist",
+      "job_description": "Optimize websites for better search engine rankings.",
+      "salary": 52000,
+      "location": "St. Louis, MO",
+      "category": "Marketing",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "42",
+      "company": "VisionOne",
+      "job_title": "Customer Success Manager",
+      "job_description": "Ensure customer success by providing high-quality support.",
+      "salary": 53000,
+      "location": "Virginia Beach, VA",
+      "category": "Customer Service",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "43",
+      "company": "StudyPath",
+      "job_title": "Education Consultant",
+      "job_description": "Provide educational consultancy services to students and schools.",
+      "salary": 59000,
+      "location": "Oakland, CA",
+      "category": "Teaching & Education",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "44",
+      "company": "CreativeEdge",
+      "job_title": "Brand Strategist",
+      "job_description": "Develop and implement brand strategies for clients.",
+      "salary": 72000,
+      "location": "Cincinnati, OH",
+      "category": "Design & Creative",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "45",
+      "company": "TopBiz",
+      "job_title": "Sales Account Manager",
+      "job_description": "Manage key sales accounts and relationships.",
+      "salary": 65000,
+      "location": "Miami, FL",
+      "category": "Sales & Communication",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "46",
+      "company": "ProjectOn",
+      "job_title": "Assistant Project Manager",
+      "job_description": "Assist with project planning and resource allocation.",
+      "salary": 59000,
+      "location": "Birmingham, AL",
+      "category": "Project Management",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "47",
+      "company": "BizReach",
+      "job_title": "Business Development Coordinator",
+      "job_description": "Support business development strategies and outreach.",
+      "salary": 51000,
+      "location": "Newark, NJ",
+      "category": "Business Development",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "48",
+      "company": "TeachWell",
+      "job_title": "Assistant Teacher",
+      "job_description": "Assist the lead teacher in classroom activities.",
+      "salary": 39000,
+      "location": "Cleveland, OH",
+      "category": "Teaching & Education",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "49",
+      "company": "MarketBoost",
+      "job_title": "Content Marketing Manager",
+      "job_description": "Develop and manage content marketing strategies.",
+      "salary": 67000,
+      "location": "San Diego, CA",
+      "category": "Marketing",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "50",
+      "company": "ServPlus",
+      "job_title": "Customer Support Team Lead",
+      "job_description": "Lead the customer support team and ensure customer satisfaction.",
+      "salary": 45000,
+      "location": "Fresno, CA",
+      "category": "Customer Service",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "51",
+      "company": "Orange",
+      "job_title": "Teacher",
+      "job_description": "teach kids",
+      "salary": "6000",
+      "location": "Jordan"
+    },
+    {
+      "id": "1b54",
+      "company": "kaslndlk",
+      "job_title": "kldnaskldn",
+      "job_description": "klwnsamdklan",
+      "salary": "122222",
+      "location": "jordan",
+      "category": "Human Resource",
+      "work_time": "Part Time"
+    },
+    {
+      "id": "8c66",
+      "company": "wsqdxsadc",
+      "job_title": "SDA",
+      "job_description": "Asdsa",
+      "salary": "1222222222222222",
+      "location": "xsadsad",
+      "category": "Project Management",
+      "work_time": "Full Time"
+    },
+    {
+      "id": "e0e3",
+      "company": "complete chain",
+      "job_title": "software",
+      "salary": "400",
+      "location": "amaan",
+      "category": "Project Management",
+      "work_time": "Full Time",
+      "job_description": "بهبهبهغ"
+    }
+  ],
+  "contact": [
+    {
+      "id": "f03c",
+      "name": "ranay",
+      "email": "ranyaan@gmail.com",
+      "subject": "work with us ",
+      "message": "p! Whether you have a question about job postings, your application, or any of our services, feel free to reach out. Our team will get back to you as soon as possible."
+    },
+    {
+      "id": "390c",
+      "name": "",
+      "email": "",
+      "subject": "",
+      "message": ""
+    },
+    {
+      "id": "8665",
+      "name": "rahaf",
+      "email": "rahaf@gmail.com",
+      "subject": "fgfh",
+      "message": "sdgfxfgfgfgx"
+    },
+    {
+      "id": "149f",
+      "name": "sdfsdf",
+      "email": "hrth@gmail.com",
+      "subject": "fghf",
+      "message": "hfhffghg"
+    },
+    {
+      "id": "0720",
+      "name": "fsfs",
+      "email": "fsff@gmail.com",
+      "subject": "fsffg",
+      "message": "dgfddggf"
+    },
+    {
+      "id": "8631",
+      "name": "dfdfgdg",
+      "email": "fdgdg@gmail.com",
+      "subject": "gfdfg",
+      "message": "dfgstyrtyr"
+    },
+    {
+      "id": "b83a",
+      "name": "gfh",
+      "email": "fff@gmail.com",
+      "subject": "dfgdg",
+      "message": "dgdfdfgdf"
+    },
+    {
+      "id": "12fe",
+      "name": "ranay",
+      "email": "ranyaan@gmail.com",
+      "subject": "gfdfg",
+      "message": "shyhtthyt"
+    },
+    {
+      "id": "7116",
+      "name": "rahaf",
+      "email": "esraa.eidd2@gmail.com",
+      "subject": "work with us fdf",
+      "message": "hghgjgkjgj"
+    },
+    {
+      "id": "6418",
+      "name": "ranay",
+      "email": "ranya.alhosan@gmail.com",
+      "subject": "dgffffh",
+      "message": "dgjdjgh"
+    },
+    {
+      "id": "fd5b",
+      "name": "ranay",
+      "email": "oroub@gmail.com",
+      "subject": "gggggg",
+      "message": "hhhhhhhhhhhhh"
+    },
+    {
+      "id": "9bbe",
+      "name": "ranay",
+      "email": "ranyaan@gmail.com",
+      "subject": "work with us ",
+      "message": "dssssssssssssss"
+    }
+  ]
+}

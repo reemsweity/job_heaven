@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+.sidebar {
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 15px;
+}
+.sidebar .nav-link {
+    color: #198754;
+    margin-bottom: 10px;
+}
+.sidebar .nav-link:hover {
+    background-color: #198754;
+    color: white;
+}
+.navbar-brand {
+    color: #198754;
+    font-weight: bold;
+}
+.content {
+    padding: 20px;
+}
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    color: #198754;
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+.modal-body input {
+    margin-bottom: 10px;
+}
+#userManagement {
+    display: none; /* Initially hide user management section */
+}
+
+
+#jobManagement{
+    display: none;   
+}
+
+
